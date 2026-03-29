@@ -30,6 +30,93 @@
     </head>
 
     <body data-bs-spy="scroll" data-bs-target="#navBar" id="alku">
+        <!-- Salasanasuojaus -->
+<div id="password-overlay" style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 1s ease forwards;
+">
+    <div style="
+        border: 3px double #9AC5EC;
+        padding: 45px 35px;
+        background: #fff;
+        text-align: center;
+        max-width: 380px;
+        width: 90%;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        animation: slideDown 0.8s ease forwards;
+    ">
+        <h2 style="margin-bottom: 10px; font-family: 'Playwrite NZ Basic', serif;">
+            Tervetuloa
+        </h2>
+        <p style="margin-bottom: 20px; color: #444;">
+            Milla & Saanan hääsivulle  
+            <br>Syötä salasana jatkaaksesi
+        </p>
+
+        <input id="password-input" type="password" placeholder="Salasana" style="
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        ">
+
+        <button onclick="checkPassword()" style="
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: #9AC5EC;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        ">Jatka</button>
+
+        <p id="password-error" style="color: red; margin-top: 10px; display: none;">
+            Väärä salasana
+        </p>
+    </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+</style>
+
+<script>
+function checkPassword() {
+    const correctPassword = "2026"; 
+    const input = document.getElementById("password-input").value;
+
+    if (input === correctPassword) {
+        const overlay = document.getElementById("password-overlay");
+        overlay.style.animation = "fadeOut 0.8s ease forwards";
+        setTimeout(() => overlay.style.display = "none", 800);
+    } else {
+        document.getElementById("password-error").style.display = "block";
+    }
+}
+</script>
+
 
         <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
