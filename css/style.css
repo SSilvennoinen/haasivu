@@ -500,7 +500,7 @@ h4 {
     letter-spacing: 1px;
 }
 body {
-    background: #ffffff url('../img/tausta.png') repeat;
+    background: #ffffff url('img/tausta.png') repeat;
     background-size: 480px; /* isommat kukat */
     opacity: 0.80; /* haaleampi */
     background-blend-mode: lighten; /* pehmentää */
