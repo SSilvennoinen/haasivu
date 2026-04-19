@@ -376,6 +376,18 @@ h4 {
 }
 /*** Gallery End ***/
 
+.info-box {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.06);
+    height: 100%;
+}
+.info-box p {
+    color: #444;
+    font-size: 15px;
+}
+
+
 
 /*** team Start ***/
 .team .team-item {
