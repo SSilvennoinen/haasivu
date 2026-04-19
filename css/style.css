@@ -493,15 +493,13 @@ h4 {
         text-align: center !important;
     }
 }
-/*** Footer End ***/
-
-
-/*** copyright Start ***/
-.copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark) !important;
+.laskuri-tausta {
+    background: #ffffff url('../img/tausta.png') repeat center center;
+    background-size: 420px; /* isommat kukat */
+    padding: 60px 0;
+    border-radius: 16px;
 }
-/*** copyright end ***/
+
 /* Laskurin numerot */
 .countdown-box div {
     color: #9AC5EC; /* vaaleansininen */
