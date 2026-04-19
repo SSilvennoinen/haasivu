@@ -1,3 +1,7 @@
+
+h1, h2, h3, .display-1, .display-4 {
+    font-family: 'Playfair Display', serif !important;
+}
 .btn-lightblue {
     background-color: #9AC5EC; /* vaaleansininen */
     color: #000;
