@@ -65,6 +65,14 @@ h4 {
     transition: 0.5s;
     z-index: 99;
 }
+.back-to-top {
+    background-color: #9AC5EC !important;
+    border-color: #9AC5EC !important;
+}
+
+.back-to-top i {
+    color: white !important;
+}
 
 /*** Button Start ***/
 .btn {
