@@ -179,10 +179,32 @@ h4 {
 /*** Navbar End ***/
 
 /*** Carousel Start ***/
-.carousel-item {
-    position: relative;
-    min-height: 100vh
-    
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh; /* täyttää näytön korkeuden */
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 60vh; /* pienempi korkeus puhelimessa */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 45vh; /* vielä pienempi korkeus pienimmillä puhelimilla */
+    }
+}
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+    .carousel-caption h4 {
+        font-size: 1rem;
+    }
 }
 
 .carousel-item img {
@@ -484,5 +506,39 @@ h4 {
     font-size: 0.8em;
     letter-spacing: 1px;
 }
+/* Laskurin valkoinen laatikko mobiiliin */
+@media (max-width: 576px) {
+
+    .wedding-date {
+        padding: 25px !important;
+    }
+
+    .wedding-date h1 {
+        font-size: 1.8rem;
+    }
+
+    .wedding-date-content h4 {
+        font-size: 1.2rem;
+        letter-spacing: 2px !important;
+    }
+
+    /* Countdown numerot pienemmiksi */
+    .wedding-date .fs-2 {
+        font-size: 1.4rem !important;
+        margin: 0 10px;
+    }
+
+    /* Countdown rivit kahteen riviin */
+    .wedding-date .d-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .wedding-date .d-flex > div {
+        width: 45%;
+        text-align: center;
+    }
+}
+
 
 
