@@ -501,6 +501,8 @@ h4 {
 }
 body {
     background: #ffffff url('../img/tausta.png') repeat;
-    background-size: 300px;
-    opacity: 0.98;
+    background-size: 480px; /* isommat kukat */
+    opacity: 0.80; /* haaleampi */
+    background-blend-mode: lighten; /* pehmentää */
 }
+
