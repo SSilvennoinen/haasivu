@@ -141,17 +141,16 @@ h4 {
     border-color: var(--bs-secondary);
     border-style: double;
 }
-
 .display-1,
 .display-2,
 .display-3,
 .display-4,
 .display-5,
-.display-6 {
-    font-family: 'Great Vibes', cursive;
-    font-weight: 700;
+.display-6,
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 600;
 }
-
 
 /*** Navbar Start ***/
 .sticky-top {
