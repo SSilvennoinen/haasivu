@@ -458,34 +458,6 @@ h4 {
 /*** Team End ***/
 
 
-/*** Contact Us Start ***/
-.RSVP-form {
-    background: linear-gradient(rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
-    object-fit: cover;
-}
-/*** Contact Us End ***/
-
-
-/*** Footer Start ***/
-.footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/footer-bg.jpg) center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.footer .footer-item a.btn-link,
-.footer .footer-item p {
-    line-height: 35px;
-    font-size: 17px;
-    color: var(--bs-light);
-    transition: 0.5s;
-}
-
-.footer .footer-item a.btn-link:hover {
-    color: var(--bs-primary);
-    letter-spacing: 2px;
-}
-
 @media (max-width: 992px) {
     .footer .text-start,
     .footer .text-center,
@@ -494,7 +466,7 @@ h4 {
     }
 }
 .laskuri-tausta {
-    background: #ffffff url('../img/tausta.png') repeat center center;
+    background: #ffffff url('img/tausta.png') repeat center center;
     background-size: 420px; /* isommat kukat */
     padding: 60px 0;
     border-radius: 16px;
