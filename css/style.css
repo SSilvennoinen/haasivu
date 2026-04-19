@@ -183,24 +183,32 @@ h1, h2, h3 {
 
 /*** Carousel Start ***/
 
+.carousel-item {
+    position: relative;
+}
+
 .carousel-item img {
     width: 100%;
-    height: auto; /* täyttää näytön korkeuden */
+    height: 100vh;
     object-fit: cover;
     object-position: center;
 }
 
+/* Tablet */
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 60vh; /* pienempi korkeus puhelimessa */
+        height: 60vh;
     }
 }
 
+/* Mobiili */
 @media (max-width: 576px) {
     .carousel-item img {
-        height: 45vh; /* vielä pienempi korkeus pienimmillä puhelimilla */
+        height: 45vh;
     }
 }
+
+/* Tekstien koot mobiilissa */
 @media (max-width: 576px) {
     .carousel-caption h1 {
         font-size: 1.8rem;
@@ -210,13 +218,7 @@ h1, h2, h3 {
     }
 }
 
-.carousel-item img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Caption overlay */
 .carousel-item .carousel-caption {
     width: 100%;
     height: 100%;
@@ -225,22 +227,12 @@ h1, h2, h3 {
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4));
-    background-size: cover;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 0;
-}
-
-.carousel-control-prev .carousel-control-prev-icon,
-.carousel-control-next .carousel-control-next-icon {
-    background: transparent;
-}
-
+/* Indikaattorit */
 #carouselId .carousel-indicators {
     padding-bottom: 30px;
 }
@@ -260,7 +252,9 @@ h1, h2, h3 {
     border-right: 15px solid var(--bs-primary);
     border-left: 15px solid var(--bs-primary);
 }
+
 /*** Carousel End ***/
+
 
 
 /*** Wedding Story Start ***/
